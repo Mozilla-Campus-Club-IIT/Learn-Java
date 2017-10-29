@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //Java ArrayList Example
+
+        //Creating arraylist
+        ArrayList<String> studentNames = new ArrayList<String>();
+
+        //Adding object in arraylist
+
+        studentNames.add("Nirosha");
+        studentNames.add("Anjana");
+        studentNames.add("Minuka");
+        studentNames.add("Dillon");
+        studentNames.add("Ashfaq");
+
+       /*
+        There are two ways to traverse collection elements:
+        By Iterator interface.
+        By for-each loop
+        */
+
+        //By Iterator interface
+
+        Iterator iterator =studentNames.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        //By Enhanced for-each loop
+
+        for (String studentName : studentNames){
+
+            System.out.println(studentName);
+        }
+
+
+
+
+    }
+}
