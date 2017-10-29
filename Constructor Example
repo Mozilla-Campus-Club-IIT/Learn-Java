@@ -1,0 +1,24 @@
+package Java;
+
+public class Student {
+    String studentName;
+
+    public Student(String studentName) {
+        this.studentName = studentName;
+    }
+
+    public String getStudentName;
+}
+
+
+
+
+package Java;
+
+public class Test {
+    public static void main(String[] args) {
+        Student a = new Student("Jack");
+        System.out.println(a.studentName);
+        System.out.println(a.getStudentName);
+    }
+}
